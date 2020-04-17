@@ -1,0 +1,5 @@
+alert:yellow
+latitude:45.9071
+magnitude:5.3
+longitude:15.9697
+timestamp:1584854643700

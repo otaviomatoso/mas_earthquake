@@ -1,0 +1,22 @@
+mas auction {
+
+	agent dispatcher : dispatcher.asl
+	agent green : alert.asl
+	agent yellow : alert.asl
+	agent orange : alert.asl
+	agent red : alert.asl
+	agent other_cases : alert.asl
+
+	/* agent alert : alert.asl {
+		focus: apps.controlPanel
+	} */
+
+	workspace apps {
+		artifact controlPanel : earthquake_env.ControlPanel(){
+			focused-by: green, yellow, orange, red, other_cases
+		}
+	}
+
+	platform: jacamo.rest.JCMRest("--main 2181 --restPort 8080")
+
+}

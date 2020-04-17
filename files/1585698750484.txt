@@ -1,0 +1,5 @@
+alert:green
+latitude:44.4906
+magnitude:6.5
+longitude:-115.1176
+timestamp:1585698750484
